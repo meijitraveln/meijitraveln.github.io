@@ -1,0 +1,272 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  max-width:1366px;
+  margin:auto;
+  background: black;
+  font-family: Helvetica, sans-serif;
+}
+#main-container{
+   display:flex;
+  flex-direction:column;
+text-align:center;
+}
+
+/*header*/
+#header{
+position:sticky;
+top:0;
+}
+#header #header-container{
+  display: flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-wrap: wrap;
+  background-color: #810000;
+}
+
+#nav-bar{
+  margin-right:50px;
+}
+#nav-bar ul{
+   margin: 1em 0 .5em;
+	text-align: center;
+}
+#nav-bar li{
+   display:inline;
+}
+#navbar a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+.nav-link{
+  color: white;
+  text-decoration:none;
+  padding-left:20px;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  margin-left: 20px;
+}
+
+#header-img{
+  height:auto;
+  width:170px;
+}
+
+#header-container {
+	width: 1366px;
+	max-width: 100%;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+}
+
+/*content*/
+/*headline section*/
+section{
+  height:100vh;
+}
+
+#headline{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.goldendestinations.com/wp-content/uploads/2015/03/Sensoji-Temple-Tokyo.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+width:100%;
+}
+
+#headline-text{
+color:white;
+font-size:100px;
+}
+
+/*Properties Section*/
+#properties{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  background:white;
+  justify-content:center;
+}
+
+#properties-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  overflow:auto;
+}
+
+.property-box{
+  width: 250px;
+  height: 400px;
+  margin: auto auto 20px auto;
+  
+  border: 2px solid #1890ff;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.property-img{
+  width: 100%;
+  margin:0px;
+}
+.property-button{
+/*border-radius:20px;
+background-color:#52c41a;
+border:#52c41a;
+  box-shadow: 5px 3px 8px 2px #888888;*/
+  text-decoration:none;
+  color:#1819ff;
+}
+
+/*News section*/
+#news{
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+#video{
+  max-width:560px;
+  width:100%;
+}
+
+#news-text{
+  color:#0e2a49;
+}
+
+/* faded image */
+.image-container {
+  position: relative;
+}
+
+.image-over {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3%;
+  right:0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #810000;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+/*contact us section*/
+
+
+* {
+  box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #810000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/*webkit*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+/*media queries*/
+@media (min-width: 960px) {
+	#header #header-container {
+		justify-content: space-between;
+	}
+}
+  @media(max-width:480px){
+    #headline-text{
+color:white;
+font-size:50px;
+}
+    #nav-bar li {
+		display:flex;
+      justify-content:center;
+      padding:5px;
+     align-items:center;
+    }
+    
+
+
+
+    
+    
+    #form{
+       width:80%;
+    }
+  }
