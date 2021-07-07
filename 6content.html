@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kabuki-za</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title 
+.header {
+  padding: 60px;
+  background: #1abc9c;
+}*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.kabukiweb.net/common/images/img_kabukiza.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.sideimg{
+  background-image:  url("https://lh3.googleusercontent.com/proxy/ACV_Q_0t_p7mgO02xJw2OU4hQhkLX5c3wzb_JowrP5BWWnGy9OE9kRQtsuG7iDkt_e5DHV4NtJf-3pr4p7jg4th8fJrBJwt5vLJ4");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.firstpimg{
+  background-image: url("http://www.japan-guide.com/g7/2090_01.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.secondpimg{
+  background-image: url("https://www.rafu.com/wp-content/uploads/2020/01/spotlight-kabuki-cinema.rgb-copy.jpg");
+  height: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/* Footer */
+#footer{
+  background-color: #810000;
+  height: auto;
+  bottom: 0px;
+  left: 0px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Header -->
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Kabuki-za </h1>
+    <h2>(歌舞伎座)</h2>
+  </div>
+</div>
+
+</div>
+
+
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Getting There around</h2>
+    <h3>The Kabukiza is a quick five minute walk from either Higashi-Ginza Station or Ginza Station on the Tokyo Metro. The theater is about a 15-minute walk from Tokyo Station  or a 10-minute walk from Yurakucho Station on the JR Yamanote Line.</h3>
+    <a href="https://lh3.googleusercontent.com/proxy/ACV_Q_0t_p7mgO02xJw2OU4hQhkLX5c3wzb_JowrP5BWWnGy9OE9kRQtsuG7iDkt_e5DHV4NtJf-3pr4p7jg4th8fJrBJwt5vLJ4" target="blank">
+    <div class="sideimg" style="height:200px;"></div>
+  </a>
+    <h4>Here’s the thing you should know about the place:</h4>
+    <p>In the olden days, mainstream kabuki was performed at selected venues in big cities like Edo (present day Tokyo), Osaka and Kyoto. Local versions of kabuki also took place in rural towns. <br><br>
+
+These days, kabuki plays are most easily enjoyed at selected theaters with Western-style seats. A day's performance is usually divided into two or three segments (one in the early afternoon and one towards the evening), and each segment is further divided into acts. Tickets are usually sold per segment, although in some cases they are also available per act. They typically cost around 2,000 yen for a single act or between 3,000 and 25,000 yen for an entire segment depending on the seat quality.
+
+</p>
+    
+      <h2>Location</h2>
+      <p>Imperial Palace (map) <br> Kikyomon Gate (map)</p>
+
+      <h2>Schedule</h2>
+      <h3>Guided Tours</h3>
+      <p>10:00 and 13:30 <br> <br>
+(Closed on Sundays and Mondays)</p>
+
+
+
+
+  </div>
+  <div class="main">
+    <h2>History</h2>
+    <div class="firstpimg" style="height:200px;"></div>
+    <p>
+      The Kabuki-za was originally opened by a Meiji era journalist, Fukuchi Gen'ichirō. Fukuchi wrote kabuki dramas in which Ichikawa Danjūrō IX and others starred; upon Danjūrō's death in 1903, Fukuchi retired from the management of the theater. The theater is now run by the Shochiku Corporation which took over in 1914. <br> <br>
+
+The original Kabuki-za was a wooden structure, built in 1889 on land which had been either the Tokyo residence of the Hosokawa clan of Kumamoto, or that of Matsudaira clan of Izu.[
+<br><br>
+The building was destroyed on October 30, 1921, by an electrical fire. The reconstruction, which commenced in 1922, was designed to "be fireproof, yet carry traditional Japanese architectural styles", while using Western building materials and lighting equipment. Reconstruction had not been completed when it again burned down during the 1923 Great Kantō earthquake. Rebuilding was finally completed in 1924.<br><br>
+
+The theater was destroyed once again by Allied bombing during World War II It was restored in 1950[3] preserving the style of 1924 reconstruction, and was until recently one of Tokyo's more dramatic and traditional buildings.<br><br>
+
+The 1950 structure was demolished in the spring of 2010, and rebuilt over the ensuing three years. Reasons cited for the reconstruction include concerns over the building's ability to survive earthquakes, as well as accessibility issues. A series of farewell performances, entitled Kabuki-za Sayonara Kōen (歌舞伎座さよなら公演, "Kabuki-za Farewell Performances") were held from January through April 2010, after which kabuki performances took place at the nearby Shinbashi Enbujō and elsewhere until the opening of the new theatre complex, which took place on March 28, 2013.</p>
+
+    <h2>Kabuki</h2>
+    <h5>What is it?</h5>
+    <div class="secondpimg" style="height:200px;"></div>
+    <p>Kabuki is an art form rich in showmanship. It involves elaborately designed costumes, eye-catching make-up, outlandish wigs, and arguably most importantly, the exaggerated actions performed by the actors. The highly-stylized movements serve to convey meaning to the audience; this is especially important since an old-fashioned form of Japanese is typically used, which is difficult even for Japanese people to fully understand. <br><br>
+
+Dynamic stage sets such as revolving platforms and trapdoors allow for the prompt changing of a scene or the appearance/disappearance of actors. Another specialty of the kabuki stage is a footbridge (hanamichi) that leads through the audience, allowing for a dramatic entrance or exit. Ambiance is aided with live music performed using traditional instruments. These elements combine to produce a visually stunning and captivating performance.<br> <br>
+
+Plots are usually based on historical events, warm hearted dramas, moral conflicts, love stories, tales of tragedy of conspiracy, or other well-known stories. A unique feature of a kabuki performance is that what is on show is often only part of an entire story (usually the best part). Therefore, to enhance the enjoyment derived, it would be good to read a little about the story before attending the show. At some theaters, it is possible to rent headsets which provide English narrations and explanations.<br><br>
+
+When it originated, kabuki used to be acted only by women and was popular mainly among common people. Later during the Edo Period, a restriction was placed by the Tokugawa Shogunate forbidding women from participating; to the present day it is performed exclusively by men. Several male kabuki actors are therefore specialists in playing female roles (onnagata).<br><br>
+
+One of the things that will be noticed are assistants dressed in black appearing on stage. They serve the purpose to hand the actors props or assist them in various other ways, in order to make the performance seamless. They are called "kurogo" and are to be regarded as non-existent.<br><br>
+
+If you come across people from the audience shouting out names at the actors on stage, do not mistake this for an act of disrespect: all kabuki actors have a yago (hereditary stage name), which is closely associated to the theater troupe which he is from. In the world of kabuki, troupes are closely knit hierarchical organizations, usually continued through generations within families. It is an accepted practice for the audience to shout out the actors' stage names at an appropriate timing as a show of support.<br><br>
+
+Formal dress code is not required when attending a kabuki play, although decent dress and footwear are recommended. Sometimes, often on the first day of a run, some ladies may attend the show dressed in traditional kimono.
+
+</p>
+
+  </div>
+</div>
+
+<!-- Footer -->
+|<div id="footer">
+    Meiji Travel To Tokyo 2021 Ⓒ  Copyright
+
+</div>
+
+</body>
+</html>

@@ -2,7 +2,6 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  max-width:1366px;
   margin:auto;
   background: black;
   font-family: Helvetica, sans-serif;
@@ -59,7 +58,7 @@ img{
 }
 
 #header-container {
-	width: 1366px;
+
 	max-width: 100%;
   margin: 0 auto;
   padding: 15px 0 15px 0;
@@ -133,7 +132,7 @@ border:#52c41a;
 }
 
 #video{
-  max-width:560px;
+  max-width:600px;
   width:100%;
 }
 

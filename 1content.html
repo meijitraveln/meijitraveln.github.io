@@ -1,218 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>Imperial Palace</title>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
-
-
+/* Style the body */
 body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title 
+.header {
+  padding: 60px;
+  background: #1abc9c;
+}*/
+
+body, html {
+  height: 100%;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
-header {
-
-  padding: 0px;
-  text-align: center;
-  font-size: 35px;
-
-}
-
-
-/*header */
-.container {
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.japan-guide.com/g18/3017_01.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  text-aligalign: center;
-  color: white;
 }
 
-#centered {
+.hero-text {
+  text-align: center;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px;
-  font-family: Helvetica, sans-serif;
-}
-
-#bg-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #a70000;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px;
-  margin-bottom: 20px;
-  border: 5px ;
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
   color: white;
 }
-
-.site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
 }
 
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
 }
 
-.copyright-text
-{
-  margin:0
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.sideimg{
+  background-image:  url("https://www.japan-guide.com/g18/2164_central_1810.gif");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.firstpimg{
+  background-image: url("https://d1nwfvw9iqnfnz.cloudfront.net/filters:autojpg()/filters:quality(80)/fit-in/1024x1024/gowithguide/posts/345/3084.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.secondpimg{
+  background-image: url("https://images.robertharding.com/zoom/RM/RH/PANORAMIC/849-1823.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 
-  }
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
+
+/* Footer */
+#footer{
+  background-color: #810000;
+  height: auto;
+  bottom: 0px;
+  left: 0px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
   }
 }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-<img id="bg-img" src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2018/12/imperial-palace-tower_font83_iStock-1216416217.jpg" alt="Paris" width="1920" height="1080" >
-<h1 id="centered">Imperial Palace</h1>
+
+
+<!-- Header -->
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Imperial Palace</h1>
+    <h2>皇居 - "Kōkyo"</h2>
+  </div>
 </div>
-</header>
 
-<section>
-  <nav>
-    <img src="https://media.timeout.com/images/105587807/image.jpg"width="100%" height="100%">
-    
-  </nav>
-  
-  <article>
-    <h1>Tour the The Imperial Palace</h1>
-    <p>The current Imperial Palace (皇居, Kōkyo) is located on the former site of Edo Castle, a large park area surrounded by moats and massive stone walls in the center of Tokyo, a short walk from Tokyo Station. It is the residence of Japan's Imperial Family.</p>
-    <p>Edo Castle used to be the seat of the Tokugawa shogun who ruled Japan from 1603 until 1867. In 1868, the shogunate was overthrown, and the country's capital and Imperial Residence were moved from Kyoto to Tokyo. In 1888 construction of a new Imperial Palace was completed. The palace was once destroyed during World War Two, and rebuilt in the same style, afterwards.</p>
-    <p>From Kokyo Gaien, the large plaza in front of the Imperial Palace, visitors can view the Nijubashi, two bridges that form an entrance to the inner palace grounds. The stone bridge in front is called Meganebashi (Eyeglass Bridge) for its looks. The bridge in the back was formerly a wooden bridge with two levels, from which the name Nijubashi (Double Bridge) is derived.</p>
-    
-  </article>
-</section>
-<section>
-  <nav>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Promulgation_of_The_New_Japanese_Constitution_%281889%29.jpg/480px-Promulgation_of_The_New_Japanese_Constitution_%281889%29.jpg"width="100%" height="100%">
-    
-  </nav>
-  
-  <article>
-    <h2>History</h2>
-    <h1>The Old palace</h1>
-    <p>In the Meiji period, most structures from the Edo Castle disappeared. Some were cleared to make way for other buildings while others were destroyed by earthquakes and fire. For example, the wooden double bridges (二重橋, Nijūbashi) over the moat were replaced with stone and iron bridges. The buildings of the Imperial Palace constructed in the Meiji era were constructed of wood. Their design employed traditional Japanese architecture in their exterior appearance while the interiors were an eclectic mixture of fashionable Japanese and European elements. The ceilings of the grand chambers were coffered with Japanese elements; however, Western chairs, tables and heavy curtains furnished the spaces. The floors of the public rooms had parquets or carpets while the residential spaces used traditional tatami mats.</p>
-    
-    
-  </article>
-</section>
-<section>
-  <nav>
-    <img src="https://www.japan-guide.com/g18/2164_central_1810.gif"width="100%" height="100%">
-    
-  </nav>
-  
-  <article>
-    <h1>Getting there and around</h1>
-    <p>If you’re heading straight over from Tokyo Station, it’s a simple 10-minute walk from the Marunouchi Central Exit (not Yaesu), heading out onto Gyoko-dori and heading straight down to the Wadakura-mon Gate.
-
-If you’re wanting to register for a palace tour, you need to head to the Kikyomon gate, which is a 10-minute walk from Nijubashimae Station or Otemachi Station via the Otemon Gate, or 15 minutes from Tokyo Station.
-
-For the northern area, you can head to Kudanshita Station for the Nippon Budokan and Science Museum or Takebashi Station for the National Museum of Modern Art.</p>
-    
-    
-  </article>
-</section>
+</div>
 
 
-<footer>
- <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">samplewebsite.com <i>MEIJI TRAVEL TO TOKYO </i>  we’ve had the pleasure to work with many businesses, groups, and individuals over the years. Our dedication to creating outstanding travel<br> experiences has allowed us to build quite the fan base, and much of our business comes from repeat customers and referrals from those who have had successful trips with us in the past..
 
-.</p>
-          </div>
-      
-        <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-         <a href="#">Meiji</a>.
-            </p>
-          </div>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Getting There around</h2>
+    <h3>The Imperial Palace is a ten minute walk from Tokyo Station.:</h3>
+    <a href="https://www.japan-guide.com/g18/2164_central_1810.gif" target="blank">
+    <div class="sideimg" style="height:200px;"></div>
+  </a>
+    <h4>Here’s the thing you should know about the palace:</h4>
+    <p>The main area itself is not open for public. This is perhaps because the Imperial family themselves still lives in the premises. This is why the main area of the Imperial Palace is closed for public, except on two specific day of the year, which is January 2nd for New Year’s Greetings event and December 23rd which is the Emperor’s Birthday.<br> <br>
 
-</footer>
-</footer>
+      However, there are guided tours of the palace grounds offered regularly throughout the years. This tour though does not enter any building. The tour itself spanned for about 75 minutes but would be held in Japanese. Foreign visitors could take English audio headsets. <br> <br>
+
+      Prior bookings are required to join the guided tours of the palace grounds. You can book the tour via their website, filled in the form which is in English, or ask someone (hint: a guide!) to book one for you. I found some tours here which offers a walking tour around the Imperial Palace. If you still have questions or unsure feel free to send a tour request.<br> <br>
+
+      If you’re lucky, you could get same-day bookings if there are some spots available. Go to the Kikyomon Gate before the start of the tour of the day.</p>
+    
+      <h2>Location</h2>
+      <p>Imperial Palace (map) <br> Kikyomon Gate (map)</p>
+
+      <h2>Schedule</h2>
+      <h3>Guided Tours</h3>
+      <p>10:00 and 13:30 <br> <br>
+(Closed on Sundays and Mondays)</p>
+
+
+
+
+  </div>
+  <div class="main">
+    <h2>The Palace</h2>
+    <h5>Photo courtesy of rocket9.net</h5>
+    <div class="firstpimg" style="height:200px;"></div>
+    <p>Edo Castle</p>
+    <p>The Tokyo Imperial Palace (皇居, Kōkyo, literally 'Imperial Residence') is the main residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda district of the Chiyoda ward of Tokyo and contains several buildings including the main palace (宮殿, Kyūden), some residences of the Imperial Family, an archive, museums and administrative offices. <br> <br>
+
+It is built on the site of the old Edo Castle. The total area including the gardens is 1.15 square kilometres (0.44 sq mi). During the height of the 1980s Japanese property bubble, the palace grounds were valued by some to be more than the value of all of the real estate in the state of California. <br> <br>
+
+After the capitulation of the shogunate and the Meiji Restoration, the inhabitants, including the Shōgun Tokugawa Yoshinobu, were required to vacate the premises of the Edo Castle. Leaving the Kyoto Imperial Palace on 26 November 1868, the Emperor arrived at the Edo Castle, made it to his new residence and renamed it to Tōkei Castle (東京城, Tōkei-jō). At this time, Tōkyō had also been called Tōkei. He left for Kyōto again, and after coming back on 9 May 1869, it was renamed to Imperial Castle (皇城, Kōjō).<br> <br>
+
+Previous fires had destroyed the Honmaru area containing the old donjon (which itself burned in the 1657 Meireki fire). On the night of 5 May 1873, a fire consumed the Nishinomaru Palace (formerly the shōgun's residence), and the new imperial Palace Castle (宮城, Kyūjō) was constructed on the site in 1888. The castle has many gardens. <br> <br>
+
+
+June, 1902. Tokyo Imperial Palace <br> <br>
+
+Imperial Palace in Tokyo 1908 
+A non-profit "Rebuilding Edo-jo Association" (NPO法人 江戸城再建) was founded in 2004 with the aim of a historically correct reconstruction of at least the main donjon. In March 2013, Naotaka Kotake, head of the group, said that "the capital city needs a symbolic building", and that the group planned to collect donations and signatures on a petition in support of rebuilding the tower. A reconstruction blueprint had been made based on old documents. The Imperial Household Agency at the time had not indicated whether it would support the project.</p>
+    <br>
+    <h2>Old & New Palace</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="secondpimg" style="height:200px;"></div>
+    <h3>Old Palace</h3>
+    <p>In the Meiji period, most structures from the Edo Castle disappeared. Some were cleared to make way for other buildings while others were destroyed by earthquakes and fire. For example, the wooden double bridges (二重橋, Nijūbashi) over the moat were replaced with stone and iron bridges. The buildings of the Imperial Palace constructed in the Meiji era were constructed of wood. Their design employed traditional Japanese architecture in their exterior appearance while the interiors were an eclectic mixture of fashionable Japanese and European elements. The ceilings of the grand chambers were coffered with Japanese elements; however, Western chairs, tables and heavy curtains furnished the spaces. The floors of the public rooms had parquets or carpets while the residential spaces used traditional tatami mats. <br> <br>
+
+The main audience hall was the central part of the palace. It was the largest building in the compound. Guests were received there for public events. The floor space was more than 223 tsubo or approximately 737.25 m2 (7,935.7 sq ft). In the interior, the coffered ceiling was traditional Japanese-style, while the floor was parquetry. The roof was styled similarly to the Kyoto Imperial Palace, but was covered with (fireproof) copper plates rather than Japanese cypress shingles. <br> <br>
+
+In the late Taishō and early Shōwa period, more concrete buildings were added, such as the headquarters of the Imperial Household Ministry and the Privy Council. These structures exhibited only token Japanese elements. <br> <br>
+
+From 1888 to 1948, the compound was called Palace Castle (宮城, Kyūjō). On the night of 25 May 1945, most structures of the Imperial Palace were destroyed in the Allied firebombing raid on Tokyo. According to the US bomber pilot Richard Lineberger, Emperor's Palace was the target of their special mission on July 29, 1945, and was hit with 2000-pound bombs. In August 1945, in the closing days of World War II, Emperor Hirohito met with his Privy Council and made decisions culminating in the surrender of Japan at an underground air-raid shelter on the palace grounds referred to as His Majesty's Library (御文庫附属室, Obunko Fuzokushitsu).<br> <br>
+
+Due to the large-scale destruction of the Meiji-era palace, a new main palace hall (宮殿, Kyūden) and residences were constructed on the western portion of the site in the 1960s. The area was renamed Imperial Residence (皇居, Kōkyo) in 1948, while the eastern part was renamed East Garden (東御苑, Higashi-Gyoen) and became a public park in 1968.</p>
+
+<h3>Present Palace</h3>
+<p>The present Imperial Palace encompasses the retrenchments of the former Edo Castle. The modern Kyūden (宮殿) designed for various imperial court functions and receptions is located in the old Nishinomaru section of the palace grounds. On a much more modest scale, the Fukiage Palace (吹上御所, Fukiage gosho), the official residence of the Emperor and empress, is located in the Fukiage Garden. Designed by Japanese architect Shōzō Uchii the modern residence was completed in 1993.[13] This residence is currently (July 2020) not in use and being prepared for Naruhito, who for the time being keeps his primary residence at the former Tōgū Palace, renamed Akasaka Palace (赤坂御所, Akasaka gosho) while he resides there. <br> <br>
+
+Except for the Imperial Household Agency and the East Gardens, the main grounds of the palace are generally closed to the public, except for reserved guided tours from Tuesdays to Saturdays (which access only the Kyūden Totei Plaza in front of the Chowaden). Each New Year (January 2) and Emperor's Birthday, the public is permitted to enter through the Nakamon (inner gate) where they gather in the Kyūden Totei Plaza. The Imperial Family appears on the balcony before the crowd and the Emperor normally gives a short speech greeting and thanking the visitors and wishing them good health and blessings. Parts of the Fukiage garden are sometimes open to the general public. <br> <br>
+
+The old Honmaru, Ninomaru, and Sannomaru compounds now comprise the East Gardens, an area with public access containing administrative and other public buildings. <br> <br>
+
+The Kitanomaru Park is located to the north and is the former northern enceinte of Edo Castle. It is a public park and is the site of the Nippon Budokan. To the south is Kokyo Gaien National Garden. <br> <br>
+
+Though much of the site is off limits to the public, there have been multiple instances of tourists attempting to trespass on the palace grounds by swimming in the moat. In 2008, a British tourist stripped naked, repeatedly dove into and swam across the moat in an attempt to avoid being arrested, and used stones and a plastic pole as weapons when faced by staff and local police officers.[14] A similar incident took place in 2013, in which two drunken tourists decided to try to sneak into the palace building after removing their clothing and entering the water near Sakurada Gate.</p>
+
+  </div>
+</div>
+
+<!-- Footer -->
+|<div id="footer">
+    Meiji Travel To Tokyo 2021 Ⓒ  Copyright
+
+</div>
 
 </body>
 </html>
